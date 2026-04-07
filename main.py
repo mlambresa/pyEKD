@@ -242,7 +242,7 @@ def run_single_sim(params):
     footstep= r * mobility
 
     # check if file already exists
-    filename = f"results_RGG/sim_lambda{coupling:.6f}_alpha{alpha:.6f}_mu{mobility:.3f}_k{degree_average}_rep{rep}.npz"
+    filename = f"results/sim_lambda{coupling:.6f}_alpha{alpha:.6f}_mu{mobility:.3f}_k{degree_average}_rep{rep}.npz"
     if os.path.exists(filename):
         print(f"[SKIP] {filename} already exists, skipping simulation.")
         return filename
